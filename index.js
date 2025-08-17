@@ -23,7 +23,7 @@ function updateWaktu() {
     const Tahun = Bulan / 12;
 
     if (today >= 9) {
-        document.getElementById("RekapBulan").innerText = "| " + (Bulan >= 12 ? `${parseInt(Tahun)} Tahun` : `${parseInt(Bulan+1)} Bulan`);
+        document.getElementById("RekapBulan").innerText = "| " + (Bulan >= 12 ? `${parseInt(Tahun)} Tahun` : `${parseInt(Bulan)} Bulan`);
     } else {
         document.getElementById("RekapBulan").innerText = "| " + `${parseInt(Bulan )} Bulan`;
     }

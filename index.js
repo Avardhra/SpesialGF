@@ -12,7 +12,7 @@ function updateWaktu() {
     hours.innerText = `${Jam} : ${Menit}`;
     minutes.innerText = `${Detik} : ${MiliDetik}`;
 
-    document.getElementById('TitleOfDay').innerText = "Waktu Bersama";
+    document.getElementById('TitleOfDay').innerText = "Nivalesha Terus Berjalan";
 
     const tanggalJadian = new Date('2024-09-09');
     const tanggalTerkini = new Date();

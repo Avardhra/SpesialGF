@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Webs style -->
+    <link rel="stylesheet" href="assets/style/index.css">
+    <link rel="stylesheet" href="assets/style/fonts-style.css">
+    <link rel="stylesheet" href="hype_font.css">
+    <!-- Webs Icon -->
+    <link rel="stylesheet" href="img/Icons/Font-awesome/css/all.css">
+    <link rel="stylesheet" href="img/Icons/Boxicons/css/boxicons.min.css">
+    <!-- Web Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Web Title -->
+    <link rel="stylesheet" href="Web-icon/Boxicons/css/boxicons.css">
+    <title>Undangan</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        user-select: none;
+    }
+
+
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    ::selection {
+        background-color: var(--avd-color-3);
+        color: var(--avd-color-2);
+    }
+
+    :root {
+        --avd-color-1: black;
+        --avd-color-2: white;
+        --avd-color-5: #800000;
+        --avd-color-3: #800000;
+        --avd-color-4: #800000;
+        --avd-color-6: rgb(215, 215, 215);
+
+    }
+
+    body {
+        font-family: 'codec_pro', sans-serif;
+        height: auto;
+        background-color: var(--avd-color-2);
+
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        color: var(--avd-color-4);
+        margin: 10px;
+    }
+
+    footer i {
+        font-size: 14px;
+        margin: 0px 2px;
+    }
+
+    footer p {
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .avd-amplop {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 95vh;
+    }
+
+    .avd-amplop ul {
+        padding: 0;
+        margin: 0;
+        animation: shake 2s ease infinite;
+        transition: 2s ease;
+    }
+
+    .avd-box {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .avd-box1 {
+        z-index: 5;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        cursor: pointer;
+        background-color: var(--avd-color-2);
+        border-bottom: 5px solid var(--avd-color-3);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.393);
+        width: 40vh;
+        height: 20vh;
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+        animation: haha 2s ease;
+        transition: animation 22s ease;
+    }
+
+
+    @keyframes shake {
+        0% {
+            transform: translateY(0px);
+            scale: 1;
+        }
+
+        50% {
+            transform: translateY(10px);
+        }
+
+        100% {
+            transform: rotate(0deg);
+            scale: 1;
+        }
+    }
+
+    @keyframes Noshake {
+        0% {
+            transform: translateY(0px);
+        }
+
+        25% {
+            transform: translateY(0px);
+        }
+
+        50% {
+            transform: rotate(0deg);
+        }
+
+        75% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+
+    .avd-glue {
+        z-index: 2;
+        position: absolute;
+        top: 20px;
+        background-color: var(--avd-color-3);
+        padding: 3px 5px;
+        width: 90%;
+        border-radius: 25px;
+        opacity: 0.2;
+    }
+
+    .avd-glue hr {
+        border: none;
+        width: 100%;
+        height: 2px;
+        background-color: var(--avd-color-3);
+    }
+
+    .avd-box1 img {
+        position: absolute;
+        bottom: 5px;
+        width: 10vh;
+    }
+
+    .avd-box1 .frame-one {
+        width: 10vh;
+        left: 0;
+    }
+
+    .avd-box1 .frame-two {
+        width: 10vh;
+        right: 0;
+    }
+
+    .avd-box1 span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 35px;
+    }
+
+    .avd-box1 span h2 {
+        color: var(--avd-color-3);
+        font-size: 20px;
+        padding: 10px 0px;
+    }
+
+    .avd-box1 span p {
+        font-size: 10px;
+        color: var(--avd-color-3);
+    }
+
+    .avd-box2 {
+        z-index: 3;
+        position: relative;
+        background-color: var(--avd-color-3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 25%;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+        top: 0;
+        padding-top: 4px;
+        transition: 0.2s ease;
+        animation-duration: 1s;
+    }
+
+
+    .avd-box2 img {
+        width: 4vh;
+        height: 4vh;
+    }
+
+    .avd-box3 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        z-index: -1;
+        position: absolute;
+        background-color: var(--avd-color-6);
+        bottom: 5px;
+        width: 35vh;
+        min-height: 10vh;
+        height: 15vh;
+        padding: 10px;
+        transition: all 0.5s ease;
+    }
+
+    .avd-box3:hover {
+        height: 65vh;
+    }
+
+
+
+    @keyframes openUndangan {
+        0% {
+            /* bottom: 80px; */
+        }
+
+        25% {
+            bottom: 80px;
+        }
+
+        50% {
+            z-index: 3;
+        }
+
+        75% {
+            bottom: 0;
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    .avd-box3 p {
+        font-size: 10px;
+        position: absolute;
+        color: var(--avd-color-4);
+    }
+
+    .avd-box3 li {
+        padding: 0px;
+        margin: 0px;
+        list-style-type: none;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .avd-box3 li hr {
+        width: 100%;
+        border: none;
+        height: 1px;
+        background-color: var(--avd-color-4);
+        opacity: 0.2;
+    }
+
+    .content-of-undangan {
+        overflow-y: auto;
+        position: fixed;
+        bottom: -100vh;
+        border-radius: 5px;
+        padding: 5px;
+        width: 95%;
+        height: 50vh;
+        border-top: 10px solid var(--avd-color-6);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--avd-color-6);
+        color: var(--avd-color-4);
+        transition: all 0.5s ease;
+    }
+
+    .content-of-undangan hr {
+        width: 100%;
+        border: none;
+        height: 1px;
+        margin: 10px 0px;
+        background-color: var(--avd-color-4);
+        opacity: 0.2;
+    }
+
+    .content-of-undangan p {
+        font-size: 12px;
+    }
+    .content-of-undangan .main-text p {
+        font-size: 12px;
+        margin-top: 10px;
+        animation: Noshake 1s infinite;
+        padding: 5px;
+        white-space: pre-line;
+        line-height: 1.2em;
+    }   
+    .content-of-undangan .content-of-Btn{
+        width: 100%;
+        margin: 10px;
+        display: flex;
+    }
+    .content-of-undangan .content-of-Btn a{
+        display:flex;
+        margin: 0px 5px;
+        position: relative;
+        border-radius: 5px;
+        text-decoration: none;
+        padding: 10px 15px;
+        font-size: 12px;
+        color: var(--avd-color-6);
+        background-color: var(--avd-color-3);
+        scale: 1;
+        width: fit-content;
+        transition: all 0.2s ease;
+    }
+    .content-of-undangan .content-of-Btn a:hover{
+        scale: 0.9;
+    }
+</style>
+
+<body>
+    <!-- ======================================================================== -->
+    <div class="box-target avd-undangan" id="undanganShow">
+
+    </div>
+    <!-- ======================================================================== -->
+    <div class="avd-amplop" id="home" data-aos="fade-down">
+        <ul id="animaCls">
+            <center>
+                <div class="avd-box1" id="fullAmplopBtn">
+                    <div class="avd avd-box2" id="headAmplopBtn">
+                        <img src="Image/avd-web-icon.png" alt="" id="headIcon">
+                    </div>
+                    <div class="avd-glue" id="clickk">
+                        <hr>
+                    </div>
+                    <span>
+                        <p>Memories Of</p>
+                        <h2>Valendra & Niken</h2>
+                    </span>
+                    <!--  -->
+                    <a href="#" class="avd-box3" id="clickBtn">
+                        <p>Klik untuk melihat</p>
+                        <li>
+                            <p>klik untuk melihat</p>
+                            <hr>
+                            <hr>
+                            <hr>
+                            <hr>
+                            <hr>
+                            <hr>
+                            <hr>
+                            <hr>
+                            <hr>
+                            <hr>
+                            <hr>
+                            <hr>
+                        </li>
+                    </a>
+
+                </div>
+            </center>
+
+        </ul>
+        <div class="content-of-undangan">
+            <p>For My Princess</p>
+            <hr>
+            <div class="main-text">
+                <p>
+                    <i class="bx bxs-heart"></i> HAPPY VALENTINE'S DAY DEAR <i class="bx bxs-heart"></i>
+
+                    Kita udah bareng-bareng selama <label id="Of_Month"></label>
+                    <!-- Sebelum itu makasih ya udah mau jadi bagian dari cerita ku disini di ITERA, karena diawal aku ga ada niatan buat cari pacar, tapi tiba-tiba kok ada yang nyangkut iya siapa lagi kalo bukan kamu, diawal kita masih gugup untuk saling ngobrol, tapi ga tau nih kok bisa kita sampai pacaran udah mau 6 bulan lagi hehe, dan selama kita pacaran aku ngerasa nyaman kalo deket dari kamu, aku suka segala hal tentang kamu, aku gapeduli kamu yang dulu gimana karena sekarang kamu udah sama aku, aku berusaha untuk ga buat kamu nangis ga ngebentak kamu, nanti kamu trauma lagi sama aku wkwk. . -->
+                    Buah mangga enak rasanya
+                    Lebih enak dimakan bareng madu
+                    Walau kita beda agama
+                    Tapi cinta itu nyata untuk dirimu
+
+                    Kamu tau gak, aku baru pertama kali ngerayain yang namanya valentine, kemarin waktu aku ngilang itu kemana? aku nyari hadiah buat kamu dan karna aku ga tau apa aja kado buat valentine akhirnya aku nelpon dua temenku buat kasih saran apa aja yang harus dibeli haha.
+
+                    Kemarin itu aku ngilang kan, nah itu aku lagi pergi nyari hadiah dari jam 4 sore sampai jam set 8 malam aku keliling buat nyari hadiah dan itulah hadiah yang aku dapat wkwk, memang ya aku ni kalo masalah cinta cinta itu kurang paham kalo ga ada temen-temenku mungkin aku "udah lah biar aja" karna sejatinya aku ga ada bucin-bucinnya wkwk.
+
+                    Aku mau ngucapin banyak terimakasih buat selama ini udah berani ngadepin sifat-sifat aku yang mungkin aneh, makasih juga udah ngebuat hari-hari ku memiliki momen yang ngebuat betah ngejalanin hari itu, kita gatau kita bisa bertahan sampai kapan dan berapa lama tapi aku berdoa semoga kita bareng selamanya karna jujur nyari cinta itu susah apalagi seiring bertambah umur semakin malas buat cowo nyari pasangan, dan mungkin aku bisa mengakhiri itu bersama kamu, aku pingin cerita kita saat ini bisa menjadi cerita untuk hari nanti dimana bisa kita ceritakan kepada anak-anak kita kelak. Untuk saat ini bagaimana alurnya kita jalanin aja kalau belum diperbolehkan untuk pacaran kita masih bisa temenan tapi walau begitu aku tetap lah sayang sama kamu jadi jangan kamu merasa aku bakal pergi cuma karna kemarin orang tua mu ngelarang kita buat pacaran, selama kamu serius sama aku aku bakall nunjukin ke mereka bahwa aku cinta bukan main-main. Jika semisal kita nanti memang tidak ditakdirkan bersama aku mau nitip pesan, carilah pasangan yang bisa ngebuat kamu bahagia, jangan cari yang hanya terpukau oleh kecantikanmu, kamu memang cantik dan pasti banyak juga yang suka kamu maka dari itu kamu harus bisa memfilter cowo-cowo itu.
+
+                    Sekali lagi selamat hari valentine semoga hari ini bisa berkesan untukmu maaf jika selama ini mungkin aku ga bisa menjadi cowo yang ada di pikiran kamu. I LOVE YOU <i class="bx bxs-heart"></i></i>
+                    <hr/>
+                </p>
+                <p>
+                    Aku mau ngasih tau kalo kemarin itu aku lagi bikin web yang isinya itu kita berdua, disitu juga ada perhitungan hari dan bulan untuk tanggal jadian kita wkwk, kamu bisa akses web nya dengan klik tombol <a href="Web-Login.html" style="color: rgb(0, 128, 255);">"Masuk"</a> dibawah ini ya sayang.
+                </p>
+            </div>
+            
+            <div class="content-of-Btn">
+                <a id="Close-Undangan">Tutup</a>
+                <a href="Web-Login.html">Masuk</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    function calculateDays() {
+        const targetDate = new Date('2024-09-09');
+        const currentDate = new Date();
+        let timeDifference = targetDate - currentDate;
+
+        timeDifference = Math.abs(timeDifference);
+
+        const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
+        let monthsDifference = (currentDate.getFullYear() - targetDate.getFullYear()) * 12 +
+            (currentDate.getMonth() - targetDate.getMonth());
+        monthsDifference = Math.abs(monthsDifference);
+
+        const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+        document.getElementById('Of_Month').textContent = monthsDifference + ' Bulan' + ' (From ' + targetDate + ')';
+    }
+    setInterval(calculateDays, 1000);
+    calculateDays();
+</script>
+<script>
+    const avdBox = document.querySelector(".avd-box3");
+    const contentUndangan = document.querySelector(".content-of-undangan");
+    const Close_Undangan = document.getElementById('Close-Undangan');
+    
+    let isClicked = false;
+    Close_Undangan.addEventListener("click", function(){
+            contentUndangan.style = "bottom:-100vh;";
+    })
+
+    avdBox.addEventListener("mouseenter", function () {
+        if (!isClicked) {
+            contentUndangan.style.bottom = "-45vh";
+        }
+    });
+    
+    avdBox.addEventListener("click", function () {
+        isClicked = true; 
+        contentUndangan.style.bottom = "0";
+        contentUndangan.style.height = "95vh";
+    });
+    
+    avdBox.addEventListener("mouseleave", function () {
+        if (!isClicked) {
+            contentUndangan.style.bottom = "-100vh";
+        }
+
+    });
+  
+
+</script>
+<script>
+    const fullAmplopBtn = document.getElementById("fullAmplopBtn");
+    const headAmplopBtn = document.getElementById("headAmplopBtn");
+    const headIcon = document.getElementById("headIcon");
+    const animaCls = document.getElementById("animaCls");
+    const clickBtn = document.getElementById("clickBtn");
+    const closeUndangan = document.getElementById("closeUndangan");
+    const avd_box3 = document.getElementsByClassName(".avd-box3");
+
+    fullAmplopBtn.addEventListener("click", () => {
+        //    animaCls.style.cssText = "animation: Noshake 2s ease infinite;"
+        headAmplopBtn.style.cssText = "z-index:-2; top:-35px; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius:0; border-bottom-right-radius:0;"
+        headIcon.style.cssText = "display:none;"
+        clickBtn.style.cssText = "min-height: 26vh; "
+    });
+
+    clickBtn.addEventListener("click", () => {
+    })
+
+    const undanganShow = document.getElementById("undanganShow");
+    closeUndangan.addEventListener("click", () => {
+        fullAmplopBtn.style.cssText = "opacity: 1;"
+        undanganShow.style.cssText = "opacity: 0; z-index: -100;"
+    })
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>

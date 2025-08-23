@@ -46,6 +46,7 @@ function updateHari() {
             const down = setInterval(() => {
                 WaktuJadian--;
                 document.getElementById("waktuBersama").innerText = parseInt(WaktuJadian);
+                document.getElementById("waktuBersama").style.color = "#ff6f1b";
                 let newWJ = WaktuJadian;
                 if(newWJ <= 1){
                  window.location.href = 'Anniversary.html';
@@ -53,7 +54,7 @@ function updateHari() {
                 if (WaktuJadian <= 0) {
                     clearInterval(down);
                 }
-            }, 10);
+            }, 5);
         } else {
             document.getElementById("waktuBersama").innerText = parseInt(WaktuJadian);
         }

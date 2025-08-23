@@ -18,13 +18,18 @@
     <title>Undangan</title>
 </head>
 <style>
+    @font-face {
+        font-family: CustomFont1;
+        src: url('fonts/luofuchun/fonts/luofuchun_roboto.ttf') format('truetype');
+        font-style: normal;
+        font-weight: normal;
+    }
+
     * {
         margin: 0;
         padding: 0;
         user-select: none;
     }
-
-
 
     ::-webkit-scrollbar {
         display: none;
@@ -37,16 +42,15 @@
 
     :root {
         --avd-color-1: black;
-        --avd-color-2: white;
-        --avd-color-5: #800000;
-        --avd-color-3: #800000;
-        --avd-color-4: #800000;
-        --avd-color-6: rgb(215, 215, 215);
+        --avd-color-2: #fff3f8;
+        --avd-color-6: 	#ff93bf;
+        --avd-color-3: #ff6da9;
+        --avd-color-4: #ffffff;
 
     }
 
     body {
-        font-family: 'codec_pro', sans-serif;
+        font-family: CustomFont1;
         height: auto;
         background-color: var(--avd-color-2);
 
@@ -101,7 +105,7 @@
         cursor: pointer;
         background-color: var(--avd-color-2);
         border-bottom: 5px solid var(--avd-color-3);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.393);
+        box-shadow: 0 0 5px #ff93bf;
         width: 40vh;
         height: 20vh;
         border-bottom-left-radius: 2px;
@@ -327,21 +331,24 @@
     .content-of-undangan p {
         font-size: 12px;
     }
+
     .content-of-undangan .main-text p {
         font-size: 12px;
         margin-top: 10px;
         animation: Noshake 1s infinite;
         padding: 5px;
-        white-space: pre-line;
+        /* white-space: pre-line; */
         line-height: 1.2em;
-    }   
-    .content-of-undangan .content-of-Btn{
+    }
+
+    .content-of-undangan .content-of-Btn {
         width: 100%;
         margin: 10px;
         display: flex;
     }
-    .content-of-undangan .content-of-Btn a{
-        display:flex;
+
+    .content-of-undangan .content-of-Btn a {
+        display: flex;
         margin: 0px 5px;
         position: relative;
         border-radius: 5px;
@@ -354,7 +361,8 @@
         width: fit-content;
         transition: all 0.2s ease;
     }
-    .content-of-undangan .content-of-Btn a:hover{
+
+    .content-of-undangan .content-of-Btn a:hover {
         scale: 0.9;
     }
 </style>
@@ -417,20 +425,41 @@
                     Walau kita beda agama
                     Tapi cinta itu nyata untuk dirimu
 
-                    Kamu tau gak, aku baru pertama kali ngerayain yang namanya valentine, kemarin waktu aku ngilang itu kemana? aku nyari hadiah buat kamu dan karna aku ga tau apa aja kado buat valentine akhirnya aku nelpon dua temenku buat kasih saran apa aja yang harus dibeli haha.
+                    Kamu tau gak, aku baru pertama kali ngerayain yang namanya valentine, kemarin waktu aku ngilang itu
+                    kemana? aku nyari hadiah buat kamu dan karna aku ga tau apa aja kado buat valentine akhirnya aku
+                    nelpon dua temenku buat kasih saran apa aja yang harus dibeli haha.
 
-                    Kemarin itu aku ngilang kan, nah itu aku lagi pergi nyari hadiah dari jam 4 sore sampai jam set 8 malam aku keliling buat nyari hadiah dan itulah hadiah yang aku dapat wkwk, memang ya aku ni kalo masalah cinta cinta itu kurang paham kalo ga ada temen-temenku mungkin aku "udah lah biar aja" karna sejatinya aku ga ada bucin-bucinnya wkwk.
+                    Kemarin itu aku ngilang kan, nah itu aku lagi pergi nyari hadiah dari jam 4 sore sampai jam set 8
+                    malam aku keliling buat nyari hadiah dan itulah hadiah yang aku dapat wkwk, memang ya aku ni kalo
+                    masalah cinta cinta itu kurang paham kalo ga ada temen-temenku mungkin aku "udah lah biar aja" karna
+                    sejatinya aku ga ada bucin-bucinnya wkwk.
 
-                    Aku mau ngucapin banyak terimakasih buat selama ini udah berani ngadepin sifat-sifat aku yang mungkin aneh, makasih juga udah ngebuat hari-hari ku memiliki momen yang ngebuat betah ngejalanin hari itu, kita gatau kita bisa bertahan sampai kapan dan berapa lama tapi aku berdoa semoga kita bareng selamanya karna jujur nyari cinta itu susah apalagi seiring bertambah umur semakin malas buat cowo nyari pasangan, dan mungkin aku bisa mengakhiri itu bersama kamu, aku pingin cerita kita saat ini bisa menjadi cerita untuk hari nanti dimana bisa kita ceritakan kepada anak-anak kita kelak. Untuk saat ini bagaimana alurnya kita jalanin aja kalau belum diperbolehkan untuk pacaran kita masih bisa temenan tapi walau begitu aku tetap lah sayang sama kamu jadi jangan kamu merasa aku bakal pergi cuma karna kemarin orang tua mu ngelarang kita buat pacaran, selama kamu serius sama aku aku bakall nunjukin ke mereka bahwa aku cinta bukan main-main. Jika semisal kita nanti memang tidak ditakdirkan bersama aku mau nitip pesan, carilah pasangan yang bisa ngebuat kamu bahagia, jangan cari yang hanya terpukau oleh kecantikanmu, kamu memang cantik dan pasti banyak juga yang suka kamu maka dari itu kamu harus bisa memfilter cowo-cowo itu.
+                    Aku mau ngucapin banyak terimakasih buat selama ini udah berani ngadepin sifat-sifat aku yang
+                    mungkin aneh, makasih juga udah ngebuat hari-hari ku memiliki momen yang ngebuat betah ngejalanin
+                    hari itu, kita gatau kita bisa bertahan sampai kapan dan berapa lama tapi aku berdoa semoga kita
+                    bareng selamanya karna jujur nyari cinta itu susah apalagi seiring bertambah umur semakin malas buat
+                    cowo nyari pasangan, dan mungkin aku bisa mengakhiri itu bersama kamu, aku pingin cerita kita saat
+                    ini bisa menjadi cerita untuk hari nanti dimana bisa kita ceritakan kepada anak-anak kita kelak.
+                    Untuk saat ini bagaimana alurnya kita jalanin aja kalau belum diperbolehkan untuk pacaran kita masih
+                    bisa temenan tapi walau begitu aku tetap lah sayang sama kamu jadi jangan kamu merasa aku bakal
+                    pergi cuma karna kemarin orang tua mu ngelarang kita buat pacaran, selama kamu serius sama aku aku
+                    bakall nunjukin ke mereka bahwa aku cinta bukan main-main. Jika semisal kita nanti memang tidak
+                    ditakdirkan bersama aku mau nitip pesan, carilah pasangan yang bisa ngebuat kamu bahagia, jangan
+                    cari yang hanya terpukau oleh kecantikanmu, kamu memang cantik dan pasti banyak juga yang suka kamu
+                    maka dari itu kamu harus bisa memfilter cowo-cowo itu.
 
-                    Sekali lagi selamat hari valentine semoga hari ini bisa berkesan untukmu maaf jika selama ini mungkin aku ga bisa menjadi cowo yang ada di pikiran kamu. I LOVE YOU <i class="bx bxs-heart"></i></i>
-                    <hr/>
+                    Sekali lagi selamat hari valentine semoga hari ini bisa berkesan untukmu maaf jika selama ini
+                    mungkin aku ga bisa menjadi cowo yang ada di pikiran kamu. I LOVE YOU <i
+                        class="bx bxs-heart"></i></i>
+                    <hr />
                 </p>
                 <p>
-                    Aku mau ngasih tau kalo kemarin itu aku lagi bikin web yang isinya itu kita berdua, disitu juga ada perhitungan hari dan bulan untuk tanggal jadian kita wkwk, kamu bisa akses web nya dengan klik tombol <a href="Web-Login.html" style="color: rgb(0, 128, 255);">"Masuk"</a> dibawah ini ya sayang.
+                    Aku mau ngasih tau kalo kemarin itu aku lagi bikin web yang isinya itu kita berdua, disitu juga ada
+                    perhitungan hari dan bulan untuk tanggal jadian kita wkwk, kamu bisa akses web nya dengan klik
+                    tombol <a href="Web-Login.html" style="color: rgb(0, 128, 255);">"Masuk"</a> dibawah ini ya sayang.
                 </p>
             </div>
-            
+
             <div class="content-of-Btn">
                 <a id="Close-Undangan">Tutup</a>
                 <a href="Web-Login.html">Masuk</a>
@@ -465,10 +494,10 @@
     const avdBox = document.querySelector(".avd-box3");
     const contentUndangan = document.querySelector(".content-of-undangan");
     const Close_Undangan = document.getElementById('Close-Undangan');
-    
+
     let isClicked = false;
-    Close_Undangan.addEventListener("click", function(){
-            contentUndangan.style = "bottom:-100vh;";
+    Close_Undangan.addEventListener("click", function () {
+        contentUndangan.style = "bottom:-100vh;";
     })
 
     avdBox.addEventListener("mouseenter", function () {
@@ -476,20 +505,20 @@
             contentUndangan.style.bottom = "-45vh";
         }
     });
-    
+
     avdBox.addEventListener("click", function () {
-        isClicked = true; 
+        isClicked = true;
         contentUndangan.style.bottom = "0";
         contentUndangan.style.height = "95vh";
     });
-    
+
     avdBox.addEventListener("mouseleave", function () {
         if (!isClicked) {
             contentUndangan.style.bottom = "-100vh";
         }
 
     });
-  
+
 
 </script>
 <script>

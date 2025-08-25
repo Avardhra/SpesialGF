@@ -61,3 +61,13 @@ function updateHari() {
     });
 }
 updateHari();
+
+module.exports = {
+  theme: {
+    extend: {
+      fontFamily: {
+        CustomFont2: ['CustomFont2', 'sans-serif'], // key = nama class
+      },
+    },
+  },
+};

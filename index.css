@@ -1,21 +1,30 @@
+
+@font-face {
+    font-family: CustomFont1;
+    src: url('fonts/khaleefa/Khaleefa.otf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
 @font-face {
     font-family: CustomFont2;
     src: url('fonts/adelia/adelia.otf') format('truetype');
     font-style: normal;
     font-weight: normal;
 }
-
 @font-face {
-    font-family: CustomFont1;
-    src: url('fonts/coffe/Coffee\ Spark.ttf') format('truetype');
+    font-family: CustomFont3;
+    src: url('fonts/luofuchun/fonts/luofuchun_roboto.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
 }
-
 @layer base {
     span {
         font-family: 'CustomFont2', sans-serif;
-        margin: 5px 0;
+        margin: 15px 0;
+        opacity: 0.2;
+    }
+    h1 {
+        font-family: CustomFont1;
     }
 }
 
@@ -38,7 +47,7 @@
 }
 
 body {
-    font-family: CustomFont1;
+    font-family: CustomFont3;
     user-select: none;
     background: linear-gradient(60deg, rgb(0, 0, 0, 1), rgb(141, 141, 141, 0.8));
     background-size: 800% 800%;
